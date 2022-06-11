@@ -1,6 +1,6 @@
 local lib = {}
 
-lib["CreateWindow"] = function(title, name)
+lib["CreateWindow"] = function(title)
 	local cobalt = Instance.new("ScreenGui")
 	local main = Instance.new("Frame")
 	local mainlayout = Instance.new("UIListLayout")
@@ -21,7 +21,7 @@ lib["CreateWindow"] = function(title, name)
 	WindowContainer.BackgroundTransparency = 1.000
 	WindowContainer.Size = UDim2.new(1, 0, 1, 0)
 	
-	main.Name = name
+	main.Name = "Main"
 	main.Parent = WindowContainer
 	main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 	main.BorderSizePixel = 0
